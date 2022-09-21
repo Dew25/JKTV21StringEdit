@@ -22,6 +22,8 @@ public class JKTV21StringEdit {
         Scanner scanner = new Scanner(System.in);
         String str = scanner.nextLine();
         System.out.println("Количество символов: "+str.length());
+        String[] words = str.split(" ");
+        System.out.println("Количество слов: "+ words.length);
     }
     
 }
