@@ -21,7 +21,7 @@ public class JKTV21StringEdit {
         System.out.println("Введите текст (латиницей): ");
         Scanner scanner = new Scanner(System.in);
         String str = scanner.nextLine();
-        
+        System.out.println("Количество символов: "+str.length());
     }
     
 }
