@@ -16,6 +16,7 @@ public class JKTV21StringEdit {
      */
     public static void main(String[] args) {
         System.out.println("----- Строки в Java -----");
+        System.out.println("Введите текст (латиницей): ");
         
     }
     
