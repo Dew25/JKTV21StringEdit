@@ -57,6 +57,16 @@ public class JKTV21StringEdit {
                     }   break;
                 case 4:
                     System.out.println("Вы выбрали пункт "+number);
+                    System.out.print("Укажите слово для замены: ");
+                    subStr = scanner.nextLine();
+                    index = str.indexOf(subStr);
+                    if(index < 0){
+                        System.out.println("Такого слова нет в тексте");
+                    }else{
+                        System.out.println("Каким словом заменить: ");
+                        String replaceStr = scanner.nextLine();
+                        System.out.println("Исправленная строка: "+ str.replace(subStr, replaceStr));
+                    }
                     break;
                 default:
                     break;
