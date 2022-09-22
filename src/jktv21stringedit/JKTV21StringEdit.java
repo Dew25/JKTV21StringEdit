@@ -5,6 +5,7 @@
  */
 package jktv21stringedit;
 
+import java.util.HashSet;
 import java.util.Scanner;
 
 /**
@@ -37,7 +38,17 @@ public class JKTV21StringEdit {
                     break OUTER;
                 case 1:
                     System.out.println("Вы выбрали пункт "+number);
-                    System.out.println("Количество символов: "+str.length());
+                    int count=0;
+                    char[] chars = {'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','r','s','t','u','v','w','x','y','z'};
+                    HashSet set = new HashSet();
+                    for (int i = 0; i < chars.length; i++) {
+                        set.add(chars[i]);
+                    }
+                    String strInLowerCase = str.toLowerCase();
+                    for (int i = 0; i < strInLowerCase.length(); i++) {
+                        if(set.contains(strInLowerCase.charAt(i))) count++;
+                    }
+                    System.out.println("Количество символов: "+count);
                     break;
                 case 2:
                     System.out.println("Вы выбрали пункт "+number);
